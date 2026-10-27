@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyecto 12 - Área de texto restringida</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main class="contenedor">
+
+        <label for="mensaje">Tu mensaje</label>
+        <textarea id="mensaje" maxlength="200" placeholder="Escribe aquí tu mensaje..."></textarea>
+
+        <div class="informacion">
+            <span id="estado">Puedes comenzar a escribir.</span>
+            <span id="contador">0 / 200 caracteres</span>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>

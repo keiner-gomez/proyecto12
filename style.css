@@ -1,0 +1,83 @@
+/* Estilos generales */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    background: #eef2f7;
+    color: #202938;
+}
+
+/* Tarjeta principal */
+.contenedor {
+    width: 100%;
+    max-width: 600px;
+    padding: 30px;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+}
+
+
+
+.descripcion {
+    margin-bottom: 24px;
+    color: #64748b;
+    line-height: 1.5;
+}
+
+label {
+    display: block;
+    margin-bottom: 9px;
+    font-weight: bold;
+}
+
+textarea {
+    display: block;
+    width: 100%;
+    min-height: 180px;
+    padding: 14px;
+    resize: vertical;
+    border: 2px solid #cbd5e1;
+    border-radius: 8px;
+    font: inherit;
+    line-height: 1.5;
+    outline: none;
+    transition: border-color 0.2s;
+}
+
+textarea:focus {
+    border-color: #2563eb;
+}
+
+/* Esta clase se activa cuando se alcanza el límite */
+textarea.limite {
+    border-color: #dc2626;
+}
+
+.informacion {
+    display: flex;
+    justify-content: space-between;
+    gap: 12px;
+    flex-wrap: wrap;
+    margin-top: 12px;
+    font-size: 14px;
+    color: #64748b;
+}
+
+#contador {
+    font-weight: bold;
+    color: #334155;
+}
+
+#contador.limite,
+#estado.limite {
+    color: #dc2626;
+}
